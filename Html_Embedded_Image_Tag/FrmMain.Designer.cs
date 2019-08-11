@@ -1,4 +1,4 @@
-﻿namespace Html_Imbedded_Image_Tag
+﻿namespace Html_Embedded_Image_Tag
 {
     partial class FrmMain
     {
@@ -55,9 +55,9 @@
             this.groupBox1.Controls.Add(this.TxtFile);
             this.groupBox1.Controls.Add(this.RadFile);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(791, 143);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -68,7 +68,7 @@
             this.RadClipboard.AutoSize = true;
             this.RadClipboard.Enabled = false;
             this.RadClipboard.Location = new System.Drawing.Point(8, 95);
-            this.RadClipboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RadClipboard.Margin = new System.Windows.Forms.Padding(4);
             this.RadClipboard.Name = "RadClipboard";
             this.RadClipboard.Size = new System.Drawing.Size(89, 21);
             this.RadClipboard.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             this.BtnBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnBrowse.Location = new System.Drawing.Point(729, 49);
-            this.BtnBrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnBrowse.Margin = new System.Windows.Forms.Padding(4);
             this.BtnBrowse.Name = "BtnBrowse";
             this.BtnBrowse.Size = new System.Drawing.Size(53, 28);
             this.BtnBrowse.TabIndex = 2;
@@ -103,7 +103,7 @@
             this.RadFile.AutoSize = true;
             this.RadFile.Checked = true;
             this.RadFile.Location = new System.Drawing.Point(8, 23);
-            this.RadFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RadFile.Margin = new System.Windows.Forms.Padding(4);
             this.RadFile.Name = "RadFile";
             this.RadFile.Size = new System.Drawing.Size(51, 21);
             this.RadFile.TabIndex = 0;
@@ -118,7 +118,7 @@
             this.ChkFullTag.Checked = true;
             this.ChkFullTag.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ChkFullTag.Location = new System.Drawing.Point(24, 165);
-            this.ChkFullTag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChkFullTag.Margin = new System.Windows.Forms.Padding(4);
             this.ChkFullTag.Name = "ChkFullTag";
             this.ChkFullTag.Size = new System.Drawing.Size(128, 21);
             this.ChkFullTag.TabIndex = 1;
@@ -130,7 +130,7 @@
             // 
             this.BtnGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BtnGenerate.Location = new System.Drawing.Point(24, 193);
-            this.BtnGenerate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnGenerate.Margin = new System.Windows.Forms.Padding(4);
             this.BtnGenerate.Name = "BtnGenerate";
             this.BtnGenerate.Size = new System.Drawing.Size(132, 36);
             this.BtnGenerate.TabIndex = 3;
@@ -154,7 +154,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtOutput.Location = new System.Drawing.Point(24, 266);
-            this.TxtOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtOutput.Margin = new System.Windows.Forms.Padding(4);
             this.TxtOutput.Multiline = true;
             this.TxtOutput.Name = "TxtOutput";
             this.TxtOutput.Size = new System.Drawing.Size(725, 138);
@@ -167,7 +167,7 @@
             this.BtnClipboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnClipboard.Image = ((System.Drawing.Image)(resources.GetObject("BtnClipboard.Image")));
             this.BtnClipboard.Location = new System.Drawing.Point(759, 266);
-            this.BtnClipboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnClipboard.Margin = new System.Windows.Forms.Padding(4);
             this.BtnClipboard.Name = "BtnClipboard";
             this.BtnClipboard.Size = new System.Drawing.Size(48, 48);
             this.BtnClipboard.TabIndex = 5;
@@ -204,10 +204,12 @@
             this.Controls.Add(this.ChkFullTag);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Html Embedded Image Tag Generator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

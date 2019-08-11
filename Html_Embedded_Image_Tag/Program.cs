@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Html_Imbedded_Image_Tag
+namespace Html_Embedded_Image_Tag
 {
     static class Program
     {
